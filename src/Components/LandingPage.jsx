@@ -1,7 +1,13 @@
 import { FaArrowUpLong } from "react-icons/fa6";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 function LandingPage() {
+  const [isAnimation, setIsAnimation] = useState(false);
+
+  const handleMouse = function () {
+    setIsAnimation(!isAnimation);
+  };
   return (
     <div
       data-scroll
@@ -51,11 +57,25 @@ function LandingPage() {
         ))}
 
         <div className="start flex items-center gap-3">
-          <div className="px-5 py-2 border-[1px] rounded-full border-zinc-400 font-light text-md uppercase cursor-pointer	">
+          <div
+            className={`px-5 py-2 border-[1px] rounded-full border-zinc-400 font-light font-medium uppercase cursor-pointer hover:bg-zinc-100 hover:text-zinc-900 font-medium hover:transition-all hover:duration-500 ${
+              isAnimation &&
+              "bg-zinc-100 text-zinc-900 font-medium transition-all duration-500"
+            }`}
+            onMouseEnter={handleMouse}
+            onMouseLeave={handleMouse}
+          >
             Start the Project
           </div>
-          <div className="w-10 h-10 border-[1px] rounded-full border-zinc-400 flex items-center justify-center cursor-pointer">
-            <span className="rotate-[45deg]">
+          <div
+            className={`w-10 h-10 border-[1px] rounded-full border-zinc-400 flex items-center justify-center cursor-pointer hover:bg-zinc-100 hover:text-zinc-900 font-medium hover:transition-all hover:duration-500 ${
+              isAnimation &&
+              "bg-zinc-100 text-zinc-900 font-medium transition-all duration-500"
+            }`}
+            onMouseEnter={handleMouse}
+            onMouseLeave={handleMouse}
+          >
+            <span className={`rotate-[45deg]`}>
               <FaArrowUpLong />
             </span>
           </div>

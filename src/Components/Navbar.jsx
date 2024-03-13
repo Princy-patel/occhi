@@ -39,7 +39,7 @@ function Navbar() {
           (items, index, array) => (
             <a
               key={index}
-              className={`text-md font-semibold capitalize ${
+              className={`text-md font-semibold capitalize cursor-pointer ${
                 index === array.length - 1 && "ml-32"
               } `}
             >

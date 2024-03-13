@@ -31,7 +31,7 @@ function Feature() {
                   initial={{ y: "100%" }}
                   animate={cards[0]}
                   transition={{ ease: [0.22, 1, 0.36, 1], delay: index * 0.05 }}
-                  className="inline-block"
+                  className="inline-block font-bold"
                 >
                   {item}
                 </motion.span>
@@ -57,7 +57,7 @@ function Feature() {
                   initial={{ y: "100%" }}
                   animate={cards[1]}
                   transition={{ ease: [0.22, 1, 0.36, 1], delay: index * 0.05 }}
-                  className="inline-block"
+                  className="inline-block font-bold"
                 >
                   {item}
                 </motion.span>

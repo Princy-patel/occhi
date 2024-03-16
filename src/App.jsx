@@ -1,4 +1,5 @@
 import About from "./Components/About";
+import Cards from "./Components/Cards";
 import Eyes from "./Components/Eyes";
 import Feature from "./Components/Feature";
 import LandingPage from "./Components/LandingPage";
@@ -16,6 +17,7 @@ function App() {
       <About />
       <Eyes />
       <Feature />
+      <Cards />
     </div>
   );
 }

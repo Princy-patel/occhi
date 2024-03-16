@@ -1,5 +1,3 @@
-import React from "react";
-
 function Navbar() {
   return (
     <div className="bg-transparent backdrop-blur-sm fixed z-[999] w-full px-20 py-8 flex justify-between items-center">

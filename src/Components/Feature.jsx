@@ -1,5 +1,4 @@
 import { motion, useAnimation } from "framer-motion";
-import { useState } from "react";
 
 function Feature() {
   const cards = [useAnimation(), useAnimation()];

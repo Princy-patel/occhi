@@ -2,6 +2,7 @@ import About from "./Components/About";
 import Cards from "./Components/Cards";
 import Eyes from "./Components/Eyes";
 import Feature from "./Components/Feature";
+import Footer from "./Components/Footer";
 import LandingPage from "./Components/LandingPage";
 import Marquee from "./Components/Marquee";
 import Navbar from "./Components/Navbar";
@@ -18,6 +19,7 @@ function App() {
       <Eyes />
       <Feature />
       <Cards />
+      <Footer />
     </div>
   );
 }
